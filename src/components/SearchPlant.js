@@ -3,7 +3,6 @@ import React from 'react'
 const SearchPlant = (props) => {
 
   return (
-    //  <>Hello World</>
     <div className="SearchForm">
       <div className="field has-addons">
         <div className="control is-expanded">

@@ -11,7 +11,7 @@ const PlantCard = (props) => {
           {!image_url && <div>Sorry, no image available.</div>}
           {image_url && <div className="card-image">
             <figure className="image is-4by3">
-              <img src={image_url} alt="plant image" />
+              <img src={image_url} alt="plant" />
             </figure>
           </div>}
           <div className="card-content">

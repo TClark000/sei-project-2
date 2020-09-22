@@ -11,7 +11,9 @@ class App extends React.Component {
   }
 
 
+
   render () {
+    // console.log(process.env.REACT_APP_MY_API_KEY)
     if (!this.state.plants) return null
     
     return (

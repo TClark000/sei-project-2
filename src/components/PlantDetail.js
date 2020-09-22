@@ -48,7 +48,7 @@ class PlantDetail extends React.Component{
             { image_url ? 
               <div className="column is-half">
                 <figure className="image is-fullwidth">
-                  <img className="is-rounded" src={image_url} alt="plant image" />
+                  <img className="is-rounded" src={image_url} alt="plant" />
                 </figure>
               </div> : <div>Sorry, no image available</div> }
           </div>

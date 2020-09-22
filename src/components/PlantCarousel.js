@@ -8,7 +8,7 @@ const PlantCarousel = (props) => {
 
   return (
     <Carousel>
-      {flowerArray.map((flower, i) => <img key={i} src={flower} className="carousel-image"/>)}
+      {flowerArray.map((flower, i) => <img key={i} src={flower} alt="flower" className="carousel-image"/>)}
     </Carousel>
   )
 

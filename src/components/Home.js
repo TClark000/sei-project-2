@@ -2,7 +2,6 @@ import React from 'react'
 
 import { getPlantsEdible, getPlantsEdibleQueryTwo } from '../lib/api'
 import PlantCard from './PlantCard'
-import DropDownFilter from './DropDownFilter'
 import SearchPlant from './SearchPlant'
 
 class Home extends React.Component {

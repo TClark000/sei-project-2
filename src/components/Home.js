@@ -66,7 +66,7 @@ class Home extends React.Component {
 
     return (
       <div className="App">
-        <div className="contianer search-form">
+        <div className="container search-form">
           <form>
             <SearchPlant filterPlants={this.filterPlants} searchQuery={this.searchQuery}/>
           </form>

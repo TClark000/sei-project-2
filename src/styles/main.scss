@@ -1,3 +1,10 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+$green: #9eb691;
+$primary: $green;
+$body-family: 'Cabin', sans-serif;
+//import variables and set variables before importing bulma.sass
 @import '~bulma/bulma.sass';
 
 .flower-array {
@@ -5,7 +12,7 @@
 }
 
 .navbar {
-  height: 100px;
+  height: 60px;
 }
 
 .search-form {

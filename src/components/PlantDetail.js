@@ -40,7 +40,7 @@ class PlantDetail extends React.Component{
                 <p>Genus Name: {genus.name}</p>
                 <p>Family Name: {family.name}</p>
                 {family_common_name && <p>Family Common Name: {family_common_name}</p>}
-                <div className="containter flower-array">
+                <div className="container flower-array">
                   <PlantCarousel flowerArray={this.state.flowerArray}/>
                 </div>
               </div>

@@ -60,7 +60,7 @@ Here is a sample of the API request with an edible plant filter.  The token was 
 
 ## Features
 List of features ready & TODOs for future development
-* search via regions idea was initialed with DropDownFilter.js 
+* search via regions, this idea was initiated with DropDownFilter.js though not implemented
 * explore other API filter options
 
 ## Status

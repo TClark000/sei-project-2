@@ -23,6 +23,7 @@ In the below image a search for garlic displays 2 edible plants from the family 
 
 Front End:
 - React
+- JavaScript
 - Axios
 - SCSS
 - Bulma

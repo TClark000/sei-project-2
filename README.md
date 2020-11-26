@@ -97,7 +97,7 @@ List of features ready & TODOs for future development
 * explore other API filter options
 
 ## Challenges and Wins
-* Working with the proxyUrl requirements was an initial challenge
+* Working with the proxyUrl requirements was an initial challenge, [Code Examples](#code-examples)
 * Understanding the parameter requirements for the API to filter for edible plants and on search queries
 * The conditional (ternary) operator was a win; using it to determine data displayed and I recently discovered its in PowerShell vs7 (cool)
 * In general project 2 was about fundamentals, code pairing, consuming an api, committing and storing code in GitHub, setting up a NavBar with react-router-dom links and styling with Bulma

@@ -42,6 +42,9 @@ Dev Tools:
 - Google Chrome dev tools
 
 ## Setup
+
+Prior to running the app, enable CORS Anywhere, by completing the challenge on the site https://cors-anywhere.herokuapp.com/corsdemo and temporarily unlock the demo. Further details on https://github.com/Rob--W/cors-anywhere/issues/301
+
 Deployed with netlify the React API webapp is hosted here:
 https://clever-joliot-1b11e8.netlify.app/
 

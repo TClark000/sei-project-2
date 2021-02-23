@@ -10,37 +10,56 @@ class Home extends React.Component {
     plants: [],
     search: [],
     searchQuery: '',
-    links: null
+    links: null,
+    corsdemo: ''
   }
 
   filterPlants = async(event) => {
     // console.log(event.target.value)
-    const searchQuery = event.target.value
-    const response = await getPlantsEdibleQueryTwo(searchQuery)
-    const plants = response.data.data
-    const links = response.data.links
-    console.log(response, response.data, links)
-    this.setState({ plants, searchQuery, links })
+    try {
+      const searchQuery = event.target.value
+      const response = await getPlantsEdibleQueryTwo(searchQuery)
+      if (response) {
+        const plants = response.data.data
+        const links = response.data.links
+        console.log(response, response.data, links)
+        this.setState({ plants, searchQuery, links })
+      }
+    } catch (err) {
+      console.log(err)
+    }
   }
 
-  
   CallEdiblePlant = async (pageNum) => {
-    const response = await getPlantsEdible(pageNum)
-    const plants = response.data.data
-    console.log(plants)
-    let links
-    if ( response.data.data.length === 20){
-      links = response.data.links
-    } else {
-      links = {
-        first: 'page=1',
-        next: 'page=1',
-        self: 'page=1',
-        last: 'page=1'
+    try {
+      let response = await getPlantsEdible(pageNum).catch(err => {
+        if ((err.response.status === 403) && (err.response.data.includes('corsdemo'))) {
+          const corsdemo = 'Prior to running this app enable CORS Anywhere, by completing the challenge on the site:'
+          this.setState({ corsdemo })
+          response = []
+        }
+        throw err
+      })
+      if (response) {
+        const plants = response.data.data
+        console.log(plants)
+        let links
+        if ( response.data.data.length === 20){
+          links = response.data.links
+        } else {
+          links = {
+            first: 'page=1',
+            next: 'page=1',
+            self: 'page=1',
+            last: 'page=1'
+          }
+        }
+        console.log(response.data.links)
+        this.setState({ plants, links })
       }
+    } catch (err) {
+      console.log(err)
     }
-    console.log(response.data.links)
-    this.setState({ plants, links })
   }
 
   componentDidMount = () => {
@@ -61,9 +80,24 @@ class Home extends React.Component {
     this.CallEdiblePlant(pageNum)
   }
 
-  render () {
-    if (!this.state.plants || !this.state.links  ) return null
+  renderContent(){
+    if (this.state.corsdemo){
+      return (
+        (
+          <div className="container column">
+            {this.state.corsdemo}
+            <a href="https://cors-anywhere.herokuapp.com/corsdemo"> cors-anywhere demo</a>
+          </div>
+        )
+      )
+    }
+  }
 
+  render () {
+    if (!this.state.plants || !this.state.links  ) return (
+      <div className="container">{this.renderContent()}</div>
+    )
+  
     return (
       <div className="App">
         <div className="container search-form">

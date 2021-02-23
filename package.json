@@ -8,6 +8,8 @@
     "concurrently": "^5.3.0",
     "cors-anywhere": "^0.4.3",
     "eslint-plugin-react": "^7.18.3",
+    "help": "^3.0.2",
+    "netlify-cli": "^3.8.5",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

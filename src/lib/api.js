@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const token =  process.env.REACT_APP_MY_API_KEY
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+// const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+const proxyUrl = 'https://clever-joliot-1b11e8.netlify.app/'
 
 const baseUrl = proxyUrl + 'https://trefle.io/api/v1/'
 

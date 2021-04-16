@@ -1,6 +1,8 @@
 # Reactathon | sei50-project II
 > Consume a RestAPI with React and Axios.  A paired project over approx a day and half.
 
+Project updated here with serverless functions: https://github.com/TClark000/sei-project-2-serverless-funtions#readme
+
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)

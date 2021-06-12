@@ -3,6 +3,8 @@
 
 Project updated here with serverless functions: https://github.com/TClark000/sei-project-2-serverless-funtions#readme
 
+<span style="color: red;">The Trefle API is no longer available online, May 2021: [trefle_api](https://twitter.com/trefle_api?lang=en)</span>
+
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)

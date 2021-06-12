@@ -10,7 +10,7 @@
     "eslint-plugin-react": "^7.18.3",
     "help": "^3.0.2",
     "netlify-cli": "^3.8.5",
-    "node-sass": "4.14.0",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.9",
